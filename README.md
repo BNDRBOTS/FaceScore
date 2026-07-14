@@ -1,4 +1,4 @@
-# FaceScore Mirror — production package
+# FaceScore Mirror™ — production package
 
 FaceScore Mirror is a static, local-first SaaS product. Facial landmarks and geometry are processed in the browser with the bundled MediaPipe runtime. No account or application backend is required for analysis.
 
