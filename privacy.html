@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0c0610">
+  <meta name="description" content="Privacy Policy — FaceScore Mirror. Local-first facial geometry analysis with no uploads, no accounts, and no trackers.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'self'; frame-ancestors 'none'; object-src 'none'">
+  <title>Privacy Policy — FaceScore Mirror</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="shared.js" defer></script>
+  <script src="legal.js" defer></script>
+</head>
+<body class="site-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-brand" href="index.html"><span class="logo-orb">◇</span><span>FaceScore <b>Mirror</b></span></a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#privacy">Privacy</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="app.html">Open app</a>
+    </nav>
+    <button class="mobile-menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">≡</button>
+    <a class="button button-primary button-small" href="app.html">Open app</a>
+  </header>
+
+  <main id="main" class="legal-shell">
+    <p class="legal-meta">Effective July 15, 2026</p>
+    <h1>Privacy Policy</h1>
+    <p>FaceScore Mirror is designed to process facial geometry locally in your browser. BNDR LLC does not operate an image-upload endpoint, user account system, analytics service, or advertising tracker in this product.</p>
+    <h2>Camera processing</h2>
+    <p>When you grant camera permission, video frames are supplied by your browser to the bundled face-landmark model. Processing occurs on your device. Camera frames are not intentionally transmitted to BNDR LLC, stored by the app, or included in saved history.</p>
+    <h2>Local browser storage</h2>
+    <p>Essential local storage may retain access status, demo usage, legal acknowledgement, and storage choice. With your permission, optional storage may retain interface preferences and metric-only session history. You can delete history from the app and clear all site data through your browser.</p>
+    <h2>Payments</h2>
+    <p>Configured purchase buttons send you to Stripe or Gumroad. Those providers process payment information under their own privacy policies. FaceScore Mirror does not receive or store full payment-card details.</p>
+    <h2>What the app does not do</h2>
+    <p>The app does not identify people, compare identities, infer sensitive traits, diagnose health, detect deception, determine emotion, or objectively rate beauty or personal worth.</p>
+    <h2>Children</h2>
+    <p>The product is not directed to children under 13. A parent or guardian should supervise use by a minor and consider whether appearance-related measurements are appropriate.</p>
+    <h2>Diagnostic reporting (optional)</h2>
+    <p>If the local engine cannot recover from a failure, the app may offer a one-click "Notify BNDR.Labs" button. When you click it, a sanitized diagnostic package is sent to the configured BNDR.Labs endpoint. The package contains the failure state, sanitized environment and runtime facts, anonymized reproducible steps (action codes only — never camera data, never access codes, never user input), and a hidden AI-executable repair prompt for the repair agent. You see only a canned acknowledgment message. No raw logs, no camera frames, no access codes, and no other personally identifiable information are sent.</p>
+    <h2>Contact</h2>
+    <p>Use the support link displayed on the site when configured.</p>
+  </main>
+
+  <footer class="site-footer">
+    <a class="site-brand" href="index.html"><span class="logo-orb">◇</span><span>FaceScore <b>Mirror</b></span></a>
+    <nav aria-label="Footer">
+      <a href="pricing.html">Pricing</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="refund.html">Refunds</a>
+      <a data-support-link hidden>Support</a>
+    </nav>
+    <span>© <span data-year></span> BNDR LLC. All measurements are geometry estimates only.</span>
+  </footer>
+
+  <aside class="consent-banner" data-consent-banner hidden aria-label="Storage choices">
+    <div>
+      <strong>Your privacy choice</strong>
+      <p>Essential storage keeps access status. Optional storage remembers preferences and metric-only history. No advertising cookies. No face images. Ever.</p>
+    </div>
+    <div class="consent-actions">
+      <button class="button button-ghost button-small" data-consent-essential>Essential only</button>
+      <button class="button button-primary button-small" data-consent-preferences>Allow preferences</button>
+    </div>
+  </aside>
+</body>
+</html>

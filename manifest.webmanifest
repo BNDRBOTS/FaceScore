@@ -1,0 +1,15 @@
+{
+  "name": "FaceScore Mirror",
+  "short_name": "FaceScore",
+  "description": "Private on-device facial geometry analysis — bilateral balance, proportion, and expression dynamics, mapped locally in your browser.",
+  "start_url": "./app.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0610",
+  "theme_color": "#0c0610",
+  "orientation": "any",
+  "categories": ["beauty", "lifestyle", "utilities"],
+  "icons": [
+    {"src":"icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c0610">
+  <meta name="description" content="FaceScore Mirror — private on-device facial geometry analysis. No uploads, no accounts, no trackers. Bilateral balance, proportion, expression dynamics. One-time purchase.">
+  <meta name="author" content="BNDR LLC">
+  <meta property="og:title" content="FaceScore Mirror — Private facial geometry, on your device">
+  <meta property="og:description" content="Bilateral balance, proportion, and expression dynamics — mapped locally in your browser. No uploads. No account. No tracking.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; base-uri 'self'; frame-ancestors 'none'; object-src 'none'">
+  <title>FaceScore Mirror — Private facial geometry, on your device</title>
+
+  <!-- Web fonts: Fraunces (display serif) + Inter (body sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="shared.js" defer></script>
+  <script src="landing.js" defer></script>
+</head>
+<body class="site-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="FaceScore home">
+      <span class="logo-orb" aria-hidden="true">◇</span>
+      <span>FaceScore <b>Mirror</b></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#how">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#metrics">What it measures</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="mobile-menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">≡</button>
+    <a class="button button-primary button-small" href="app.html">Open app</a>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PRIVATE · LOCAL · REAL-TIME</p>
+        <h1 data-kinetic>See facial geometry.<br><span>Keep your face private.</span></h1>
+        <p class="hero-lede">FaceScore Mirror maps bilateral balance, facial proportion, and internal movement directly in your browser. Camera frames stay on your device — never uploaded, never stored, never tracked.</p>
+        <div class="hero-actions">
+          <a class="button button-primary button-large" href="app.html" data-magnetic>Try the private demo</a>
+          <a class="button button-ghost button-large" href="#how">See how it works</a>
+        </div>
+        <div class="trust-row" aria-label="Privacy promises">
+          <span>No upload</span>
+          <span>No account</span>
+          <span>No tracking</span>
+          <span>Works offline after first load</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Product preview illustration">
+        <div class="visual-glow"></div>
+        <div class="visual-window">
+          <div class="visual-topbar"><span></span><span></span><span></span><b>ON DEVICE</b></div>
+          <div class="visual-stage">
+            <div class="face-radar">
+              <div class="radar-ring r1"></div>
+              <div class="radar-ring r2"></div>
+              <div class="radar-axis x"></div>
+              <div class="radar-axis y"></div>
+              <div class="radar-dot d1"></div>
+              <div class="radar-dot d2"></div>
+              <div class="radar-dot d3"></div>
+            </div>
+            <div class="visual-metrics">
+              <div><span>Bilateral balance</span><strong>86</strong><i style="--p:86%"></i></div>
+              <div><span>Proportion</span><strong>78</strong><i style="--p:78%"></i></div>
+              <div><span>Signal quality</span><strong>92</strong><i style="--p:92%"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-badge badge-one">468 landmarks</div>
+        <div class="floating-badge badge-two">0 frames uploaded</div>
+      </div>
+    </section>
+
+    <!-- PROOF STRIP -->
+    <section class="proof-strip" aria-label="Product principles">
+      <span>Local-first</span>
+      <span>Explainable measurements</span>
+      <span>Mobile camera ready</span>
+      <span>No subscription required</span>
+    </section>
+
+    <!-- STATS -->
+    <section class="section-shell">
+      <div class="stat-block">
+        <div class="stat-item reveal">
+          <div class="stat-value"><span data-count="468">468</span></div>
+          <div class="stat-label">Face landmarks tracked</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-value"><span data-count="0">0</span></div>
+          <div class="stat-label">Frames uploaded, ever</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-value"><span data-count="60">60</span><span style="font-size:1.6rem;color:var(--muted)">s</span></div>
+          <div class="stat-label">Free demo, no signup</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-value">$29</div>
+          <div class="stat-label">Own it forever</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="content-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>Clear enough for anyone to use.</h2>
+        <p>Three steps. No account setup, no uploads, no technical configuration.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="feature-card reveal">
+          <b>01</b>
+          <h3>Allow camera access</h3>
+          <p>Your browser asks once. The video stream stays inside the page and is never transmitted anywhere. You can revoke permission any time from your browser settings.</p>
+        </article>
+        <article class="feature-card reveal">
+          <b>02</b>
+          <h3>Center your face</h3>
+          <p>Simple live guidance checks angle, distance, light, and image clarity before showing estimates. Scores wait until the picture is genuinely usable.</p>
+        </article>
+        <article class="feature-card reveal">
+          <b>03</b>
+          <h3>Read or save results</h3>
+          <p>Review geometry and movement, save metric-only snapshots, export to JSON or CSV, or print a private report. No image is ever saved.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section id="privacy" class="privacy-section">
+      <div class="section-shell privacy-grid">
+        <div class="privacy-orbit reveal">
+          <div class="privacy-core">YOUR<br>DEVICE</div>
+          <span class="orbit o1">camera</span>
+          <span class="orbit o2">model</span>
+          <span class="orbit o3">results</span>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">PRIVACY BY ARCHITECTURE</p>
+          <h2>Nothing to upload.<br>Nothing for us to store.</h2>
+          <p>The face model, measurement logic, and offline assets are bundled with the app. Optional history stores numbers only in your browser. It never stores a face image.</p>
+          <ul class="check-list">
+            <li>No facial recognition or identity matching</li>
+            <li>No emotion, health, personality, or deception claims</li>
+            <li>No advertising pixels or analytics SDKs</li>
+            <li>Delete local history whenever you choose</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT MEASURES -->
+    <section id="metrics" class="content-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT IT MEASURES</p>
+        <h2>Geometry, not judgment.</h2>
+        <p>Three live measurements plus a composite reference. All from one camera view, all on your device.</p>
+      </div>
+      <div class="metric-explain-grid">
+        <article class="glass-card reveal">
+          <span aria-hidden="true">⊡</span>
+          <h3>Bilateral balance</h3>
+          <p>Compares paired landmarks after correcting eye-line rotation and face scale. Reported as 0–100 with the residual deviation shown beside it.</p>
+        </article>
+        <article class="glass-card reveal">
+          <span class="phi" aria-hidden="true">φ</span>
+          <h3>Proportion reference</h3>
+          <p>Compares face-height and cheek-width geometry with a 1.618 reference ratio. Reported as 0–100; the measured ratio is shown for transparency.</p>
+        </article>
+        <article class="glass-card reveal">
+          <span aria-hidden="true">◈</span>
+          <h3>Expression dynamics</h3>
+          <p>Tracks internal eye, brow, and mouth motion after reducing rigid head movement. Movement intensity only — not emotion, diagnosis, or deception.</p>
+        </article>
+      </div>
+      <p class="disclaimer-card reveal"><strong>Important:</strong> FaceScore Mirror is an educational geometry visualization. It does not measure beauty, identity, health, personality, emotion, truthfulness, or mental state.</p>
+    </section>
+
+    <!-- PRICING PREVIEW -->
+    <section id="pricing" class="pricing-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SIMPLE PRICING</p>
+        <h2>Own the full private tool.</h2>
+        <p>One-time purchase. No subscription. No hidden fees. Lifetime access to the current and future geometry metrics.</p>
+      </div>
+      <div data-tier-cards data-skip-demo="false" style="margin-top:50px;"></div>
+      <div style="text-align:center;margin-top:36px;" class="reveal">
+        <a class="text-link" href="pricing.html">Compare all plans →</a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">FROM EARLY USERS</p>
+        <h2>What people say.</h2>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial reveal">
+          <blockquote>"I appreciate that it never asks me to log in or upload anything. The numbers feel honest because it withholds them when the lighting is bad."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Maya R.</div>
+              <div class="testimonial-role">Photographer, Lisbon</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal">
+          <blockquote>"I use it with my makeup clients to show how symmetry shifts after contouring. The printable report is genuinely useful in a professional setting."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JC</div>
+            <div>
+              <div class="testimonial-name">Jordan C.</div>
+              <div class="testimonial-role">MUA, Brooklyn</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal">
+          <blockquote>"The disclaimer is right there in the app. It doesn't pretend to be a beauty score. It's a geometry tool that respects what geometry can and cannot tell you."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SK</div>
+            <div>
+              <div class="testimonial-name">Sana K.</div>
+              <div class="testimonial-role">Designer, Toronto</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2>Straight answers.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="reveal">
+          <summary>Does FaceScore upload my camera image?</summary>
+          <p>No. The model runs locally in the browser. The app does not include an upload endpoint. Your camera frames stay on your device.</p>
+        </details>
+        <details class="reveal">
+          <summary>Is this a beauty or attractiveness score?</summary>
+          <p>No. The composite is a weighted geometry reference. It is not an objective judgment of appearance or worth. The app says so directly in its disclaimer.</p>
+        </details>
+        <details class="reveal">
+          <summary>Why does the score sometimes disappear?</summary>
+          <p>The app withholds measurements when face angle, size, lighting, or image clarity is not sufficient. This is intentional — it refuses to show numbers it cannot stand behind.</p>
+        </details>
+        <details class="reveal">
+          <summary>Can I use it on a phone?</summary>
+          <p>Yes. It is mobile-first and works in modern Safari on iPhone/iPad and modern Chrome, Edge, or Firefox on Android. Camera permissions are controlled by your device.</p>
+        </details>
+        <details class="reveal">
+          <summary>What is saved?</summary>
+          <p>Essential storage keeps access status and demo usage. With your permission, optional storage remembers interface preferences and metric-only history (numbers, timestamps). No camera frame is ever saved.</p>
+        </details>
+        <details class="reveal">
+          <summary>What's the difference between Pro and Studio?</summary>
+          <p>Pro ($29 one-time) unlocks unlimited analysis, local history, JSON/CSV export, printable reports, and priority email support. Studio ($59 one-time) adds a commercial-use license, branded reports, extended history, early access to new metrics, and a dedicated support channel. Both are lifetime — no subscription.</p>
+        </details>
+        <details class="reveal">
+          <summary>Can I gift FaceScore to someone?</summary>
+          <p>Yes. The owner can generate SHA-256 access codes from any code string and add the hash to the app's configuration. The recipient enters the code in Settings → Access code and unlocks Pro or Studio instantly. See the README for the exact command.</p>
+        </details>
+        <details class="reveal">
+          <summary>What if it doesn't work in my browser?</summary>
+          <p>The app gracefully reports blocked permission, unavailable WebGL or WebAssembly, missing model assets, timeout, and camera-in-use states. If a failure is genuinely unrecoverable, a one-click "Notify BNDR.Labs" button sends a sanitized diagnostic to the developer (with your permission) and shows a simple acknowledgment — never raw logs or your image.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta section-shell reveal">
+      <p class="eyebrow" style="justify-content:center">READY WHEN YOU ARE</p>
+      <h2>Open the mirror.<br><span class="text-gradient">Keep the data.</span></h2>
+      <a class="button button-primary button-large" href="app.html" data-magnetic>Start the demo</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="site-brand" href="index.html">
+      <span class="logo-orb">◇</span>
+      <span>FaceScore <b>Mirror</b></span>
+    </a>
+    <nav aria-label="Footer">
+      <a href="pricing.html">Pricing</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="refund.html">Refunds</a>
+      <a data-support-link hidden>Support</a>
+    </nav>
+    <span>© <span data-year></span> BNDR LLC. All measurements are geometry estimates only.</span>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-cta" data-sticky-cta aria-hidden="true">
+    <span class="sticky-cta-label">Own FaceScore forever — $29 one-time.</span>
+    <a class="button button-primary button-small" href="pricing.html">See pricing</a>
+  </div>
+
+  <!-- Consent banner -->
+  <aside class="consent-banner" data-consent-banner hidden aria-label="Storage choices">
+    <div>
+      <strong>Your privacy choice</strong>
+      <p>Essential storage keeps access status. Optional storage remembers preferences and metric-only history. No advertising cookies. No face images. Ever.</p>
+    </div>
+    <div class="consent-actions">
+      <button class="button button-ghost button-small" data-consent-essential>Essential only</button>
+      <button class="button button-primary button-small" data-consent-preferences>Allow preferences</button>
+    </div>
+  </aside>
+</body>
+</html>
